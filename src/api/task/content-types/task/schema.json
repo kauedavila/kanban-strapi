@@ -4,7 +4,8 @@
   "info": {
     "singularName": "task",
     "pluralName": "tasks",
-    "displayName": "Task"
+    "displayName": "Task",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,11 @@
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "task_list": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::task-list.task-list"
     }
   }
 }
